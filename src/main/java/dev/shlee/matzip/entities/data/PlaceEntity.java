@@ -16,6 +16,8 @@ public class PlaceEntity {
     private String contactSecond;
     private String contactThird;
     private String homepage;
+//    @JsonFormat은 Jackson 라이브러리에서 제공하는 어노테이션으로 JSON 응답값의 형식을 지정할 때 사용한다.
+//    응답값의 형식이란 날짜 형식 뿐만이 아니라 JSON 응답의 키 설정, 특정 값의 포함 여부, 응답값의 순서 등 여러가지 형태를 의미한다.
     @JsonFormat(pattern = "HH:mm", timezone = "GMT+9")
     private Date openFrom;
     @JsonFormat(pattern = "HH:mm", timezone = "GMT+9")
